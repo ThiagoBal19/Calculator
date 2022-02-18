@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./sass/styles.css">
+</head>
+<body>
+    <section>
+        <div id="calculator">
+            <div id="total">
+                <div id="calculate">
+                    <input id="numberOne" type="number" min="0" placeholder="0">
+                    <div id="simbolo"></div>
+                    <input id="numberTwo" type="number" min="0" placeholder="0">
+                    <span>=</span>
+                    <div id="result"></div>
+                </div>
+            </div>
+            <div id="numbersButtons">
+                <div id="numbersZone">
+                    <div id="options">
+                        <button id="sumar" class="optionBtn" onclick="plus()">+</button>
+                        <button id="restar" class="optionBtn" onclick="subtract()">-</button>
+                        <button id="multiplicar" class="optionBtn" onclick="multiply()">x</button>
+                        <button id="dividir" class="optionBtn" onclick="divide()">/</button>
+                    </div>
+                </div>
+                <div id="numbers">
+                    <div>
+                        <button id="7" class="numberBtn">7</button>
+                        <button id="8" class="numberBtn">8</button>
+                        <button id="9" class="numberBtn">9</button>
+                    </div>
+                    <div>
+                        <button id="4" class="numberBtn">4</button>
+                        <button id="5" class="numberBtn">5</button>
+                        <button id="6" class="numberBtn">6</button>
+                    </div>
+                    <div>
+                        <button id="1" class="numberBtn">1</button>
+                        <button id="2" class="numberBtn">2</button>
+                        <button id="3" class="numberBtn">3</button>
+                    </div>
+                    <div>
+                        <button id="." class="numberBtn">.</button>
+                        <button id="0" class="numberBtn">0</button>
+                        <button id="borrar" class="numberBtn">←</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>

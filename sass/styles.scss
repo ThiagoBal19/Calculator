@@ -1,0 +1,102 @@
+body {
+    background-color: rgba(97, 255, 247, 0.329);
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #calculator {
+        border: 1px solid black;
+        border-radius: 2rem;
+        background-color: #373b67;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 75%;
+    
+        #total {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border: 1px solid black;
+            border-radius: 1rem;
+            margin-bottom: 0.5rem;
+            height: 4rem;
+            width: 85%;
+            background-color: #c7c7c7;
+
+
+            #calculate {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            #numberOne, #numberTwo {
+                border: none;
+                width: 5rem;
+                text-align: center;
+            }
+            #result {
+                overflow: hidden;
+                text-align: end;
+            }
+            span, #simbolo {
+                margin: 0rem 1rem;
+            }
+        }
+
+        #numbersButtons {
+            display: flex;
+            flex-direction: row-reverse;
+
+            #numbersZone {
+                #options {
+                    display: flex;
+                    flex-direction: row;
+
+                    .optionBtn {
+                        margin: 0.1rem;
+                        border: 1px solid gray;
+                        border-radius: 3rem;
+                        background-color: rgb(142, 210, 233);
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                    .optionBtn:hover {
+                        cursor: pointer;
+                        background-color: rgb(120, 184, 207);
+                    }
+                    .optionBtn:active {
+                        border: 1px solid black;
+                    }
+                }
+            }
+            #numbers{
+                display: none;
+                flex-direction: column;
+
+                .numberBtn {
+                    margin: 0.1rem;
+                    border: 1px solid gray;
+                    border-radius: 3rem;
+                    background-color: rgb(199, 199, 199);
+                    width: 4rem;
+                    height: 4rem;
+                }
+                .numberBtn:hover {
+                    cursor: pointer;
+                    background-color: rgb(179, 179, 179);
+                }
+                .numberBtn:active {
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,149 @@
+body {
+  background-color: rgba(97, 255, 247, 0.329);
+}
+
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #calculator {
+  border: 1px solid black;
+  border-radius: 2rem;
+  background-color: #373b67;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  height: 75%;
+}
+
+section #calculator #total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  height: 4rem;
+  width: 85%;
+  background-color: #c7c7c7;
+}
+
+section #calculator #total #calculate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section #calculator #total #numberOne, section #calculator #total #numberTwo {
+  border: none;
+  width: 5rem;
+  text-align: center;
+}
+
+section #calculator #total #result {
+  overflow: hidden;
+  text-align: end;
+}
+
+section #calculator #total span, section #calculator #total #simbolo {
+  margin: 0rem 1rem;
+}
+
+section #calculator #numbersButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section #calculator #numbersButtons #numbersZone #options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section #calculator #numbersButtons #numbersZone #options .optionBtn {
+  margin: 0.1rem;
+  border: 1px solid gray;
+  border-radius: 3rem;
+  background-color: #8ed2e9;
+  width: 4rem;
+  height: 4rem;
+}
+
+section #calculator #numbersButtons #numbersZone #options .optionBtn:hover {
+  cursor: pointer;
+  background-color: #78b8cf;
+}
+
+section #calculator #numbersButtons #numbersZone #options .optionBtn:active {
+  border: 1px solid black;
+}
+
+section #calculator #numbersButtons #numbers {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section #calculator #numbersButtons #numbers .numberBtn {
+  margin: 0.1rem;
+  border: 1px solid gray;
+  border-radius: 3rem;
+  background-color: #c7c7c7;
+  width: 4rem;
+  height: 4rem;
+}
+
+section #calculator #numbersButtons #numbers .numberBtn:hover {
+  cursor: pointer;
+  background-color: #b3b3b3;
+}
+
+section #calculator #numbersButtons #numbers .numberBtn:active {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=styles.css.map */
