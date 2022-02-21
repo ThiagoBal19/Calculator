@@ -32,8 +32,9 @@ section #calculator {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 28%;
   height: 75%;
+  padding: 0rem 1rem;
+  overflow: hidden;
 }
 
 section #calculator #screen {
@@ -44,16 +45,16 @@ section #calculator #screen {
       -ms-flex-align: center;
           align-items: center;
   width: 85%;
-  height: 25%;
-  border: none;
+  height: 15%;
   border-radius: 1rem;
   margin-bottom: 1rem;
   background-color: #c7c7c7;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  font-size: xx-large;
+  font-size: 1.3rem;
   padding: 0.5rem;
+  overflow: hidden;
 }
 
 section #calculator #screen:focus-visible {
@@ -135,5 +136,12 @@ section #calculator #numbersButtons #numbers .numberBtn:hover {
 
 section #calculator #numbersButtons #numbers .numberBtn:active {
   border: 2px solid black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+  section #calculator {
+    width: 100%;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

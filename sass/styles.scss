@@ -16,21 +16,22 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 28%;
         height: 75%;
+        padding: 0rem 1rem;
+        overflow: hidden;
 
         #screen {
             display: flex;
             align-items: center;
             width: 85%;
-            height: 25%;
-            border: none;
+            height: 15%;
             border-radius: 1rem;
             margin-bottom: 1rem;
             background-color: #c7c7c7;
             justify-content: end;
-            font-size: xx-large;
+            font-size: 1.3rem;
             padding: 0.5rem;
+            overflow: hidden;
         }
         #screen:focus-visible {
             outline: none;
@@ -95,3 +96,5 @@ section {
         }
     }
 }
+
+@import "./responsive.scss";

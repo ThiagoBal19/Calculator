@@ -1,12 +1,12 @@
 let number1;
 let number2;
-let resultado2;
-let resultado = document.getElementById("screen")
-let suma = document.getElementById("sumar")
-let resta = document.getElementById("restar")
-let multiplicacion = document.getElementById("multiplicar")
-let division = document.getElementById("dividir")
-let Igual = document.getElementById("igual")
+let result2;
+let result = document.getElementById("screen")
+let plus = document.getElementById("plus")
+let subtract = document.getElementById("subtract")
+let multiplication = document.getElementById("multiplication")
+let divide = document.getElementById("divide")
+let Equal  = document.getElementById("equal")
 let one = document.getElementById("1");
 let two = document.getElementById("2");
 let three = document.getElementById("3");
@@ -17,64 +17,63 @@ let seven = document.getElementById("7");
 let eight = document.getElementById("8");
 let nine = document.getElementById("9");
 let zero = document.getElementById("0");
-let comaNumero = document.getElementById(".")
 
 
 // NÚMEROS
 one.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 1;
+    result.innerHTML = result.innerHTML + 1;
 }
 two.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 2;
+    result.innerHTML = result.innerHTML + 2;
 }
 three.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 3;
+    result.innerHTML = result.innerHTML + 3;
 }
 four.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 4;
+    result.innerHTML = result.innerHTML + 4;
 }
 five.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 5;
+    result.innerHTML = result.innerHTML + 5;
 }
 six.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 6;
+    result.innerHTML = result.innerHTML + 6;
 }
 seven.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 7;
+    result.innerHTML = result.innerHTML + 7;
 }
 eight.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 8;
+    result.innerHTML = result.innerHTML + 8;
 }
 nine.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 9;
+    result.innerHTML = result.innerHTML + 9;
 }
 zero.onclick = function() {
-    resultado.innerHTML = resultado.innerHTML + 0;
+    result.innerHTML = result.innerHTML + 0;
 }
 
 // SÍMBOLOS
 // suma
-suma.onclick = function() {
-    number1 = resultado.innerHTML
-    resultado2 = "+";
+plus.onclick = function() {
+    number1 = result.innerHTML
+    result2 = "+";
     clean()
 }
 // resta
-resta.onclick = function() {
-    number1 = resultado.innerHTML
-    resultado2 = "-";
+subtract.onclick = function() {
+    number1 = result.innerHTML
+    result2 = "-";
     clean()
 }
 // multiplicación
-multiplicacion.onclick = function() {
-    number1 = resultado.innerHTML
-    resultado2 = "*";
+multiplication.onclick = function() {
+    number1 = result.innerHTML
+    result2 = "*";
     clean()
 }
 // división
-division.onclick = function() {
-    number1 = resultado.innerHTML
-    resultado2 = "/";
+divide.onclick = function() {
+    number1 = result.innerHTML
+    result2 = "/";
     clean()
 }
 
@@ -82,28 +81,28 @@ division.onclick = function() {
 // FUNCIONES
 // limpiar
 function clean() {
-    resultado.innerHTML = "";
+    result.innerHTML = "";
 }
 
 // total
-Igual.onclick = function() {
-    number2 = resultado.innerHTML;
-    resultado;
-    switch(resultado2) {
+Equal.onclick = function() {
+    number2 = result.innerHTML;
+    result;
+    switch(result2) {
         case "+":
-            resultado.innerHTML = parseInt(number1) + parseInt(number2);
+            result.innerHTML = parseInt(number1) + parseInt(number2);
             break;
         case "-":
-            resultado.innerHTML = number1 - number2;
+            result.innerHTML = number1 - number2;
             break;
         case "*":
-            resultado.innerHTML = number1 * number2;
+            result.innerHTML = number1 * number2;
             break;
         case "/":
-            resultado.innerHTML = number1 / number2;
+            result.innerHTML = number1 / number2;
             break;
         default:
-            resultado.innerHTML = "";
+            result.innerHTML = "";
             break;
     }
 }
