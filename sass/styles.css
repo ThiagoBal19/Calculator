@@ -110,12 +110,12 @@ section #calculator #numbersButtons #numbers {
           flex-direction: column;
 }
 
-section #calculator #numbersButtons #numbers #igual {
+section #calculator #numbersButtons #numbers #equal {
   background-color: #8ed2e9;
   font-size: x-large;
 }
 
-section #calculator #numbersButtons #numbers #igual:hover {
+section #calculator #numbersButtons #numbers #equal:hover {
   background-color: #78b8cf;
 }
 
