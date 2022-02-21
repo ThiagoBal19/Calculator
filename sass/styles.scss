@@ -10,45 +10,30 @@ section {
 
     #calculator {
         border: 1px solid black;
-        border-radius: 2rem;
+        border-radius: 1rem;
         background-color: #373b67;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 40%;
+        width: 28%;
         height: 75%;
-    
-        #total {
+
+        #screen {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 1rem;
-            border: 1px solid black;
-            border-radius: 1rem;
-            margin-bottom: 0.5rem;
-            height: 4rem;
             width: 85%;
+            height: 25%;
+            border: none;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
             background-color: #c7c7c7;
-
-
-            #calculate {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-            #numberOne, #numberTwo {
-                border: none;
-                width: 5rem;
-                text-align: center;
-            }
-            #result {
-                overflow: hidden;
-                text-align: end;
-            }
-            span, #simbolo {
-                margin: 0rem 1rem;
-            }
+            justify-content: end;
+            font-size: xx-large;
+            padding: 0.5rem;
+        }
+        #screen:focus-visible {
+            outline: none;
         }
 
         #numbersButtons {
@@ -58,7 +43,7 @@ section {
             #numbersZone {
                 #options {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
 
                     .optionBtn {
                         margin: 0.1rem;
@@ -67,6 +52,7 @@ section {
                         background-color: rgb(142, 210, 233);
                         width: 4rem;
                         height: 4rem;
+                        font-size: x-large;
                     }
                     .optionBtn:hover {
                         cursor: pointer;
@@ -78,8 +64,16 @@ section {
                 }
             }
             #numbers{
-                display: none;
+                display: flex;
                 flex-direction: column;
+
+                #igual {
+                    background-color: rgb(142, 210, 233);
+                    font-size: x-large;
+                }
+                #igual:hover {
+                    background-color: rgb(120, 184, 207);
+                }
 
                 .numberBtn {
                     margin: 0.1rem;
@@ -88,13 +82,14 @@ section {
                     background-color: rgb(199, 199, 199);
                     width: 4rem;
                     height: 4rem;
+                    font-size: x-large;
                 }
                 .numberBtn:hover {
                     cursor: pointer;
                     background-color: rgb(179, 179, 179);
                 }
                 .numberBtn:active {
-                    border: 1px solid black;
+                    border: 2px solid black;
                 }
             }
         }
