@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(97, 255, 247, 0.329);
+    background-color: white;
 }
 
 section {
@@ -10,13 +10,12 @@ section {
 
     #calculator {
         border: 1px solid black;
-        border-radius: 1rem;
-        background-color: #373b67;
+        background-color: black;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 75%;
+        height: 80vh;
         padding: 0rem 1rem;
         overflow: hidden;
 
@@ -25,7 +24,6 @@ section {
             align-items: center;
             width: 85%;
             height: 15%;
-            border-radius: 1rem;
             margin-bottom: 1rem;
             background-color: #c7c7c7;
             justify-content: end;
